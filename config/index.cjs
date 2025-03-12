@@ -127,19 +127,18 @@ const USER_CONFIG = {
    * 删除isShowAge属性，也会不展示岁数
    * --- 是否展示周岁信息结束 ---
    */
-  // FESTIVALS: [
-  //   // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-  //   {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
-  //   {"type": "*生日", "name": "老爸", "year": "1976", "date": "03-09", isShowAge: true},
-  //   {"type": "*生日", "name": "老妈", "year": "1977", "date": "11-17", isShowAge: true},
-  //   {"type": "*生日", "name": "老妹", "year": "2005", "date": "11-22", isShowAge: true},
-  //   {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-  //   // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-  //   {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-31"},
-  //   {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
-  //   // 你可以不断按格式往下增加
-  //   // ...
-  // ],
+  FESTIVALS: [
+    // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
+    {"type": "*生日", "name": "老爸", "year": "1976", "date": "03-09", isShowAge: true},
+    {"type": "*生日", "name": "老妈", "year": "1977", "date": "11-17", isShowAge: true},
+    {"type": "*生日", "name": "老妹", "year": "2005", "date": "11-22", isShowAge: true},
+    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+    {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-31"},
+    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    // 你可以不断按格式往下增加
+    // ...
+  ],
 
   /**
    * 限制重要节日的展示条目, 需要填写数字;
