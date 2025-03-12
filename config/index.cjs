@@ -23,7 +23,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oiQFc6tkHIh6wilQ1YXzanYP21bg',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'qDtUpfQtuEvktQEd-EALNpdF_MZ__GwegIpiW3MEwG4',
+      useTemplateId: 'clUoX8fiw861tWqTTtbE50dcF_TxbyaZwJi96yZu_ZE',
       // 所在省份
       province: "江苏",
       // 所在城市
@@ -40,13 +40,14 @@ const USER_CONFIG = {
           type: '*生日', name: '宝贝', year: '2000', date: '10-02',
         },
         {
-          type: '*生日', name: '自己', year: '1996', date: '09-31',
+          type: '*生日', name: '自己', year: '1996', date: '09-20',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
           type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
         },
       ],
+      festivals_limit: 3,
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
@@ -61,7 +62,7 @@ const USER_CONFIG = {
        // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
        id: 'oiQFc6tkHIh6wilQ1YXzanYP21bg',
        // 使用微信测试号：你想对他发送的模板消息的模板ID
-       useTemplateId: 'qDtUpfQtuEvktQEd-EALNpdF_MZ__GwegIpiW3MEwG4',
+       useTemplateId: 'clUoX8fiw861tWqTTtbE50dcF_TxbyaZwJi96yZu_ZE',
        // 所在省份
        province: "江苏",
        // 所在城市
@@ -79,9 +80,10 @@ const USER_CONFIG = {
          {"type": "*生日", "name": "老妈", "year": "1977", "date": "11-17", isShowAge: true},
          {"type": "*生日", "name": "老妹", "year": "2005", "date": "11-22", isShowAge: true},
          // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-         {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-31"},
+         {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-01"},
          {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
        ],
+       festivals_limit: 6,
        // 我们在一起已经有xxxx天了的配置
        customizedDateList: [
          // 在一起的日子
