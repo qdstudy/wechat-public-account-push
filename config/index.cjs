@@ -29,20 +29,20 @@ const USER_CONFIG = {
       // 所在城市
       city: "苏州",
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
-      horoscopeDateType: '今日',
+      // horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       // openUrl: "https://wangxinleo.cn",
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '10-02',
+      // horoscopeDate: '10-02',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
+          type: '*生日', name: '宝贝', year: '2000', date: '10-02',
+        },
+        {
+          type: '*生日', name: '自己', year: '1996', date: '09-31',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
         {
           type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
         },
@@ -56,8 +56,41 @@ const USER_CONFIG = {
       ],
     },
     {
-      
-    }
+       // 想要发送的人的名字
+       name: 'me',
+       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+       id: 'oiQFc6tkHIh6wilQ1YXzanYP21bg',
+       // 使用微信测试号：你想对他发送的模板消息的模板ID
+       useTemplateId: 'qDtUpfQtuEvktQEd-EALNpdF_MZ__GwegIpiW3MEwG4',
+       // 所在省份
+       province: "江苏",
+       // 所在城市
+       city: "苏州",
+       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+       // horoscopeDateType: '今日',
+       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+       // openUrl: "https://wangxinleo.cn",
+       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+       // horoscopeDate: '10-02',
+       festivals: [
+         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+         {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
+         {"type": "*生日", "name": "老爸", "year": "1976", "date": "03-09", isShowAge: true},
+         {"type": "*生日", "name": "老妈", "year": "1977", "date": "11-17", isShowAge: true},
+         {"type": "*生日", "name": "老妹", "year": "2005", "date": "11-22", isShowAge: true},
+         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+         {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-31"},
+         {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+       ],
+       // 我们在一起已经有xxxx天了的配置
+       customizedDateList: [
+         // 在一起的日子
+         { keyword: 'love_day', date: '2022-09-08' },
+         // 结婚纪念日
+         { keyword: 'marry_day', date: '2022-09-09' },
+       ],
+
+    },
   ],
 
 
@@ -92,23 +125,26 @@ const USER_CONFIG = {
    * 删除isShowAge属性，也会不展示岁数
    * --- 是否展示周岁信息结束 ---
    */
-  FESTIVALS: [
-    // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
-    // 你可以不断按格式往下增加
-    // ...
-  ],
+  // FESTIVALS: [
+  //   // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+  //   {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
+  //   {"type": "*生日", "name": "老爸", "year": "1976", "date": "03-09", isShowAge: true},
+  //   {"type": "*生日", "name": "老妈", "year": "1977", "date": "11-17", isShowAge: true},
+  //   {"type": "*生日", "name": "老妹", "year": "2005", "date": "11-22", isShowAge: true},
+  //   {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+  //   // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+  //   {"type": "节日", "name": "结婚纪念日", "year": "1996", "date": "09-31"},
+  //   {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+  //   // 你可以不断按格式往下增加
+  //   // ...
+  // ],
 
   /**
    * 限制重要节日的展示条目, 需要填写数字;
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  // FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
