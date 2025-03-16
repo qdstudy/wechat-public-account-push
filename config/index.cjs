@@ -21,7 +21,7 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '宝贝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oiQFc6tkHIh6wilQ1YXzanYP21bg',
+      id: '',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'eNPzsR1RvM69t962mEtvY6rmqgt1cUfa1QjXzWrT1G8',
       // 所在省份
@@ -93,6 +93,39 @@ const USER_CONFIG = {
        ],
 
     },
+    {
+      // 想要发送的人的名字
+      name: '小吴',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oiQFc6mV0j0MtIlY4s3xu4H5pTro',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'a6o_Kq1azd3dzEw9_dPUyPCcM8q_SEQ7YUSAPbMuOpc',
+      // 所在省份
+      province: "安徽",
+      // 所在城市
+      city: "黄山",
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      // horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      // openUrl: "https://wangxinleo.cn",
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      // horoscopeDate: '10-02',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "生日", "name": "我", "year": "2001", "date": "10-22", isShowAge: false},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        // {"type": "节日", "name": "相识纪念日", "year": "2018", "date": "08-01"},
+      ],
+      festivals_limit: 1,
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2018-08-01' },
+        // 结婚纪念日
+        // { keyword: 'marry_day', date: '2022-09-09' },
+      ],
+
+   },
   ],
 
 
