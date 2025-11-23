@@ -56,15 +56,13 @@ const USER_CONFIG = {
         { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
-
-    
     {
        // 想要发送的人的名字
        name: '前度',
        // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
        id: 'oiQFc6tkHIh6wilQ1YXzanYP21bg',
        // 使用微信测试号：你想对他发送的模板消息的模板ID
-       useTemplateId: '	GjLlmot2FMyEg-gOWqFSZc7XsvXdp8su7V9yD1oL1bQ',
+       useTemplateId: 'GjLlmot2FMyEg-gOWqFSZc7XsvXdp8su7V9yD1oL1bQ',
        // 所在省份
        province: "江苏",
        // 所在城市
@@ -101,7 +99,7 @@ const USER_CONFIG = {
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'MEl0ULi41uNeOLTM2V7oAlu7sZAAj_GHNZHx1v1wHeU',
+  CALLBACK_TEMPLATE_ID: '',
 
   CALLBACK_USERS: [
     {
